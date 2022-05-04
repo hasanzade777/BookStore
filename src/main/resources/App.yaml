@@ -1,7 +1,7 @@
 spring:
   datasource:
     type: com.zaxxer.hikari.HikariDataSource
-    url: jdbc:mysql://localhost:3102/new-project?createDatabaseIfNotExist=true
+    url: jdbc:mysql://localhost:3355/new-project?createDatabaseIfNotExist=true
     username: root
     password: password
   jpa:
@@ -9,5 +9,3 @@ spring:
     hibernate:
       ddl-auto: update
     show-sql: true
-server:
-  port: 9090

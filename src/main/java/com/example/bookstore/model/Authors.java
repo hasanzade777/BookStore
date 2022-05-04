@@ -24,6 +24,7 @@ public class Authors {
     private Long id;
     private String username;
     private String password;
+    private Roles roles=Roles.AUTHOR;
     @OneToMany(mappedBy = "author", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
     private List<Books> booksList;
 
