@@ -22,7 +22,30 @@ public class BookDetails {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String bookDetails;
-    @OneToOne(fetch = FetchType.LAZY,cascade = CascadeType.ALL,mappedBy = "bookDetails")
+    @OneToOne(fetch = FetchType.LAZY, cascade = CascadeType.ALL, mappedBy = "bookDetails")
     private Books books;
 
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public String getBookDetails() {
+        return bookDetails;
+    }
+
+    public void setBookDetails(String bookDetails) {
+        this.bookDetails = bookDetails;
+    }
+
+    public Books getBooks() {
+        return books;
+    }
+
+    public void setBooks(Books books) {
+        this.books = books;
+    }
 }
